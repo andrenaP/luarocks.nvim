@@ -43,6 +43,9 @@ return {
 			-- We haven't built yet so register the rocks
 			-- to be installed after build finishes
 			build.ensure_rocks_after_build(opts.rocks, opts.luarocks_build_args)
+			if opts.auto_install then
+				build.build()
+			end
 		end
 	end,
 }
