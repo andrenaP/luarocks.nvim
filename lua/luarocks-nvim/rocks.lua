@@ -26,7 +26,7 @@ build = { type = "builtin" }
 		paths.luarocks,
 		"install",
 		"--lua-version=5.1",
-		"--server='http://192.168.0.249:8081/'",
+		"--server='https://nvim-neorocks.github.io/rocks-binaries/'",
 		"--deps-only",
 		paths.rockspec,
 	})
