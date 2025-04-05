@@ -120,6 +120,7 @@ local steps = {
 				"sh",
 				"configure",
 				"--prefix=" .. paths.rocks,
+				"--server=http://192.168.0.249:8081",
 				"--lua-version=5.1",
 				"--force-config",
 			}
