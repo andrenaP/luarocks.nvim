@@ -120,10 +120,10 @@ local steps = {
 				"sh",
 				"configure",
 				"--prefix=" .. paths.rocks,
-				"--server=http://192.168.0.249:8081",
 				"--lua-version=5.1",
 				"--force-config",
 			}
+			print(cmd)
 			vim.list_extend(cmd, luarocks_args or {})
 			local error_code, stdout, stderr = run_job(cmd)
 			-- some known workarounds for better user experience
